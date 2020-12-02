@@ -120,6 +120,10 @@ func getGPU(client *http.Client, config *config.Config, model string, remote boo
 				cartURL = fmt.Sprintf("https://www.nvidia.com/%s/geforce/graphics-cards/30-series/rtx-%s/", config.NvidiaLocale, model)
 			case "3090":
 				cartURL = fmt.Sprintf("https://www.nvidia.com/%s/geforce/graphics-cards/30-series/rtx-%s/", config.NvidiaLocale, model)
+			case "3060":
+				cartURL = fmt.Sprintf("https://www.nvidia.com/%s/geforce/graphics-cards/30-series/rtx-%s-ti/", config.NvidiaLocale, model)
+			case "3070":
+				cartURL = fmt.Sprintf("https://www.nvidia.com/%s/geforce/graphics-cards/30-series/rtx-%s/", config.NvidiaLocale, model)
 			default:
 				cartURL = "https://www.nvidia.com/"
 			}
